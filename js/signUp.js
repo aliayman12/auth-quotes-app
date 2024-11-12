@@ -14,7 +14,9 @@ if (localStorage.getItem("user") != null) {
   users = [];
 }
 
-console.log(users);
+if (!localStorage.getItem("user")) {
+  window.location.href = "register.html";
+}
 
 function addUser() {
   const isEmailExists = users.some((user) => user.email === signUpEmail.value);
