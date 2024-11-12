@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="css styles/all.min.css" />
+    <link rel="stylesheet" href="css styles/bootstrap.min.css" />
+    <link rel="stylesheet" href="css styles/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chango&family=Metamorphous&family=Mochiy+Pop+One&family=Permanent+Marker&family=Quintessential&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="app">
+      <nav class="navbar navbar-expand-lg py-4">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <p class="welcome-message m-0 fw-medium fs-5">
+              Welcome <span id="userName"></span>
+            </p>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <button
+                  id="logoutBtn"
+                  class="btn btn-danger fw-semibold px-4 py-2 shadow-sm rounded-pill logout-btn"
+                  type="submit"
+                >
+                  Logout
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="content">
+        <h1 class="fw-bolder fa-4x mb-4">Quote of the Day</h1>
+        <p>Click the button below to recieve a random quote!</p>
+        <button class="btn fs-6 fw-medium" onclick="changeQuote()">
+          New Quote
+        </button>
+        <p class="fw-bolder" id="demo"></p>
+      </div>
+    </div>
+
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/home.js"></script>
+  </body>
+</html>

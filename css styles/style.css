@@ -1,0 +1,137 @@
+body {
+  background-color: #24353f;
+}
+
+.app {
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../images/overlay-bg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.logout-btn {
+  transition: transform 0.2s ease-in-out;
+}
+
+.logout-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.logout-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.5);
+}
+
+.navbar .welcome-message {
+  font-family: "Chango", sans-serif;
+  color: #24353f;
+}
+
+.content {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content h1 {
+  letter-spacing: 5px;
+  font-family: "Chango", sans-serif;
+
+  color: #24353f;
+}
+
+.content p:not(#demo) {
+  font-size: 1.1rem;
+  color: #24353f;
+  font-family: "Chango", sans-serif;
+}
+
+.content button {
+  background-color: #17a2b8;
+  color: #24353f;
+  padding: 12px 30px;
+  border-radius: 8px;
+  font-family: "Chango", sans-serif;
+}
+
+.content button:hover {
+  background-color: #37c4da;
+}
+
+#demo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffdf47;
+  text-align: center;
+  margin-top: 30px;
+  font-style: italic;
+  font-family: "Chango", sans-serif;
+}
+
+@media (max-width: 576px) {
+  .content h1 {
+    font-size: 2rem;
+    letter-spacing: 0px;
+  }
+
+  .content p:not(#demo) {
+    display: none;
+  }
+
+  .content button {
+    width: 80%;
+    margin-top: 20px;
+  }
+
+  #demo {
+    font-size: 1rem;
+  }
+}
+
+.register h1,
+.login h1 {
+  color: #17a2b8;
+}
+
+.form-control {
+  background-color: #24353f;
+  border: 1px solid #ced4da;
+  padding: 10px;
+  font-size: 1em;
+}
+
+.form-control::placeholder {
+  color: #888;
+}
+
+.form-control:focus {
+  background-color: #e9ecef;
+  border-color: #24353f;
+  box-shadow: none;
+}
+
+.register button,
+.login button {
+  background-color: #17a2b8;
+}
+
+.register button:hover,
+.login button:hover {
+  background-color: #37c4da;
+}
+
+.register a,
+.login a {
+  color: #17a2b8;
+  text-decoration: none;
+}
+
+.register a:hover,
+.login a:hover {
+  color: #3dcbe0;
+  text-decoration: underline;
+}

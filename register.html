@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="css styles/all.min.css">
+    <link rel="stylesheet" href="css styles/bootstrap.min.css" />
+    <link rel="stylesheet" href="css styles/style.css" />
+  </head>
+  <body>
+    <div class="container">
+    
+      <div
+        class="register vh-100 d-flex flex-column justify-content-center align-items-center"
+      >
+        <h1 class="mb-5">Create Account</h1>
+
+        <div
+          id="formError"
+          class="alert alert-danger d-none w-75 text-danger"
+          role="alert"
+        >
+          Please fill out the form correctly.
+        </div>
+
+        <div class="w-75">
+          <input
+            id="regName"
+            class="form-control mb-3"
+            type="text"
+            placeholder="Enter your name"
+          />
+          <div id="nameAlert" class="alert alert-danger d-none" role="alert">
+            Name must start with a capital letter and contain 3 to 13 alphabetic
+            characters only.
+          </div>
+        </div>
+
+        <div class="w-75">
+          <input
+            id="regEmail"
+            class="form-control mb-3"
+            type="text"
+            placeholder="Enter your email"
+          />
+          <div id="emailAlert" class="alert alert-danger d-none" role="alert">
+            Please enter a valid email address in the format:
+            example@domain.com.
+          </div>
+        </div>
+
+        <div class="w-75">
+          <input
+            id="regPassword"
+            class="form-control mb-3"
+            type="password"
+            placeholder="Enter your password"
+          />
+          <div id="passAlert" class="alert alert-danger d-none" role="alert">
+            Password must start with an uppercase letter followed by one or more
+            digits.
+          </div>
+        </div>
+        <button class="btn w-75 mt-3" onclick="addUser()">
+          Sign Up
+        </button>
+
+        <p class="m-0 text-secondary mt-3">
+            You have an account? <a href="login.html">Sign In</a>
+        </p>
+      </div>
+    </div>
+
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/signUp.js"></script>
+  </body>
+</html>
