@@ -12,16 +12,14 @@ body {
 
 .logout-btn {
   transition: transform 0.2s ease-in-out;
+  font-family: "Chango", sans-serif;
+  color: #24353f;
+  font-size: 14px;
 }
 
 .logout-btn:hover {
   transform: scale(1.05);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.logout-btn:focus {
-  outline: none;
-  box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.5);
+  color: #24353f;
 }
 
 .navbar .welcome-message {
@@ -50,7 +48,7 @@ body {
   font-family: "Chango", sans-serif;
 }
 
-.content button {
+.content .quote-btn {
   background-color: #17a2b8;
   color: #24353f;
   padding: 12px 30px;
@@ -58,13 +56,13 @@ body {
   font-family: "Chango", sans-serif;
 }
 
-.content button:hover {
+.content .quote-btn:hover {
   background-color: #37c4da;
 }
 
 #demo {
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-size: 1.2rem;
+  width: 50%;
   color: #ffdf47;
   text-align: center;
   margin-top: 30px;
@@ -74,12 +72,17 @@ body {
 
 @media (max-width: 576px) {
   .content h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     letter-spacing: 0px;
   }
 
+  .content .quote-btn {
+    padding: 6px 15px;
+  }
+
   .content p:not(#demo) {
-    display: none;
+    text-align: center;
+    font-size: 12px;
   }
 
   .content button {
@@ -88,7 +91,8 @@ body {
   }
 
   #demo {
-    font-size: 1rem;
+    font-size: 18px;
+    width: 100%;
   }
 }
 

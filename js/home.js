@@ -1,18 +1,15 @@
-let welcomeMessage = document.getElementById('userName')
-let logoutButton = document.getElementById("logoutBtn")
+let welcomeMessage = document.getElementById("userName");
+let logoutButton = document.getElementById("logoutBtn");
 
-if(localStorage.getItem('userName') != null){
-  welcomeMessage.innerHTML = localStorage.getItem('userName')
-
-}else{
-
-  location.href = 'login.html';
+if (localStorage.getItem("userName") != null) {
+  welcomeMessage.innerHTML = localStorage.getItem("userName");
+} else {
+  location.href = "login.html";
 }
 
 logoutButton.addEventListener("click", function () {
   localStorage.removeItem("userName");
-  location.href = 'login.html';
-
+  location.href = "login.html";
 });
 
 let quotes = [
@@ -44,5 +41,5 @@ function changeQuote() {
 
   demoElement.innerHTML = randomQuote;
 
-  // lastRandom = randomNum
+  lastRandom = randomNum;
 }
