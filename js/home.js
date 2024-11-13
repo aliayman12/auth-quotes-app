@@ -6,13 +6,13 @@ if(localStorage.getItem('userName') != null){
 
 }else{
 
-  location.href('index.html')
-
+  location.href = 'login.html';
 }
 
 logoutButton.addEventListener("click", function () {
-  location.href('index.html')
   localStorage.removeItem("userName");
+  location.href = 'login.html';
+
 });
 
 let quotes = [
@@ -44,5 +44,5 @@ function changeQuote() {
 
   demoElement.innerHTML = randomQuote;
 
-  // lastRandom = randomNum
+  lastRandom = randomNum
 }
