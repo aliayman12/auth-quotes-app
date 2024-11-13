@@ -1,7 +1,17 @@
-document.getElementById("userName").innerHTML =
-  localStorage.getItem("userName");
+let welcomeMessage = document.getElementById('userName')
+let logoutButton = document.getElementById("logoutBtn")
 
-document.getElementById("logoutBtn").addEventListener("click", function () {
+if(localStorage.getItem('userName') != null){
+  welcomeMessage.innerHTML = localStorage.getItem('userName')
+
+}else{
+
+  location.href('index.html')
+
+}
+
+logoutButton.addEventListener("click", function () {
+  location.href('index.html')
   localStorage.removeItem("userName");
 });
 
