@@ -12,10 +12,7 @@ if (localStorage.getItem("user") != null) {
   users = JSON.parse(localStorage.getItem("user"));
 } else {
   users = [];
-}
-
-if (!localStorage.getItem("user")) {
-  window.location.href = "register.html";
+  location.href('login.html')
 }
 
 function addUser() {
