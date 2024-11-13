@@ -6,7 +6,7 @@ if(localStorage.getItem('userName') != null){
 
 }else{
 
-  location.href = 'register.html';
+  location.href = 'login.html';
 }
 
 logoutButton.addEventListener("click", function () {
