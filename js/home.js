@@ -4,9 +4,6 @@ let logoutButton = document.getElementById("logoutBtn")
 if(localStorage.getItem('userName') != null){
   welcomeMessage.innerHTML = localStorage.getItem('userName')
 
-}else{
-
-  location.href = 'register.html';
 }
 
 logoutButton.addEventListener("click", function () {
