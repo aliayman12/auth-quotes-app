@@ -44,5 +44,5 @@ function changeQuote() {
 
   demoElement.innerHTML = randomQuote;
 
-  lastRandom = randomNum
+  // lastRandom = randomNum
 }
